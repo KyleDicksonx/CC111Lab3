@@ -1,6 +1,11 @@
+/*
+ * Kyle Dickson
+ * 50116781
+ * I pledge that this submission is solely my work, and that I have neither given, nor received help from anyone
+ */
 package PasswordVerifier;
 public class PasswordVerifier{
-   private byte minPasswordLength = 7;
+   private static byte minPasswordLength = 7;
    
    public static void main(String[] args){
 	   
@@ -12,7 +17,7 @@ public class PasswordVerifier{
       boolean UC = false;
       boolean LC = false;
 
-      if(input.length() >= 7){
+      if(input.length() >= minPasswordLength){
          length = true;
       }
       else{
